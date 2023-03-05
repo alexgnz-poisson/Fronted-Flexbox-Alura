@@ -1,0 +1,100 @@
+/* Flexbox */
+.headerPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Espacio entre elemento, propiedad de flex */
+}
+.headerPrincipal-nav {
+  display: flex; /*Con esto solucionamos que el header quedara uno a lado del otro */
+}
+/* Footer */
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /*Propiedad de FLEXBOX, espacio alrededor del elemento */
+  width: 70%; /*Indica al navegador quee se container va a correspoder a 3/4 partes de lo que seria el footer*/
+  margin-right: 5%;
+}
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+/* Mapa de los cursos */
+
+.rodapePrincipal-navMap-list {
+  display: flex; /*Coloco los elementos de un lado a otro. */
+  flex-direction: column; /*Indicarle al navegador que los elementos estaran uno abajo de otro*/
+  height: 250px;
+  flex-wrap: wrap; /*Cuando llega a 250px va a quebrar el contenido  a la siguiente columa */
+}
+
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+/* Video */
+
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.videoSobre-video{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list{
+    flex-grow: 2;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .headerPrincipal .container {
+    flex-direction: column;
+  }
+  .headerPrincipal-nav {
+    flex-direction: column;
+  }
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+  }
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+  .rodapePrincipal-patrocinadores-list {
+    align-items: initial;
+    width: 100%;
+    margin: 0%;
+  }
+  .headerPrincipal-nav-link-app{
+    /* Esto sirve para que "NuestraAPP" este en el inicio al momento de que se haga movile  */
+    order: -1;
+  }
+}
+
+
+

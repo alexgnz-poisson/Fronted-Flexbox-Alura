@@ -1,0 +1,437 @@
+lógica, HTML, CSS y JavaScript. Independientemente de si desea trabajar solo en la parte lógica de front-end 
+o solo en la parte visual, estas cuatro habilidades son extremadamente importantes para convertirse en 
+alguien que desarrolla front-end.
+
+QUE ES HTML ?
+HTML es el lenguaje de la web, es el esqueleto de una página, es su estructura. HTML es un lenguaje de marcado de texto 
+
+QUE ES CSS?
+CSS es la pintura en la pared, es el marco del cuadro colgado, es el tamaño del letrero. CSS es un lenguaje 
+creado para diseñar cosas en una página web, ya sea tamaño de fuentes, colores de cajas, efectos visuales, etc…
+
+QUE ES JAVASCRIPT?
+JavaScript es el lenguaje creado para brindar interacción en páginas web. ¿Quiere pulsar un botón y cambiar el 
+color de cualquier componente? ¡JavaScript! 
+
+
+CSS
+Tecnologías / propiedades:
+
+*Transition
+
+*Animation
+
+*Transform
+
+*Perspective
+
+*CSS Grid
+
+*Flexbox
+
+*Objec-fit
+
+Estas tecnologías son muy interesantes para aquellos que quieran desarrollar páginas sin utilizar frameworks CSS.
+
+Pre/Post-procesadores:
+*SASS (preprocesador)
+
+*PostCSS (post-procesador)
+
+Existen procesadores pre / post para facilitar la escrita de CSS. Terminas escribiendo código CSS de una manera 
+diferente y al subirlo a un servidor, todo se transforma en CSS común.
+
+Frameworks:
+*Bootstrap
+
+*Materialize CSS
+
+*Tailwind CSS
+
+Los frameworks son interesantes para aquellos que necesitan acelerar la escrita de CSS, sin tener que preocuparse 
+por la responsividad o los nombres de las clases.
+
+Estándares CSS:
+BEM
+
+Atomic CSS
+
+Cube CSS
+
+SMACSS
+
+Los estándares CSS son diferentes formas de escribir CSS, ya sea en nombres de clases o separando propiedades. La 
+idea principal de estos estándares es escribir un CSS más limpio y más fácil de entender y hacerle mantenimiento.
+
+
+"Lenguaje"
+TypeScript
+
+Este es el "lenguaje" principal que se utiliza para escribir aplicaciones o funciones con JavaScript. 
+Dejé el término "lenguaje" entre comillas porque en realidad es JavaScript. Hay otros "lenguajes" que no 
+mencioné porque el principal y más usado es TypeScript, pero los otros son solo diferentes formas de escribir 
+JavaScript.
+
+Frameworks
+*React
+
+*Angular
+
+*Vue.js
+
+*Next.js
+
+*Ionic
+
+*React Native
+
+Características / Tecnologías
+*Fetch
+
+*WebSocket
+
+*LocalStorage
+
+*[Async/Await
+
+*Promises
+
+*Map
+
+*Arrays tipados
+
+*SPA
+
+*Progressive Web Apps
+
+*WebGL
+
+
+ACCESIBILAIDAD WEB 
+Significa que sitios web, herramientas y tecnologías estan diseñadas y desarrolladas de tal manera que las personas 
+con discapacidades pueden usarlar.Mas concretamente, las personas pueden percibir, comprender, navegar, interactuar
+y contribuir a la web 
+
+Pocas palabras incluso paginas que por ejemplo tiene de fondo colores chillones, con letras claras cansan la vista entonces
+eso afecta y no es tan comoda para muchas personas. la ACCESIBILAIDAD busca en ayudar tener un balance para que todos
+puedan interectuar de la mejor menera en el sitio web
+
+W3.ORG PAGINA IMPORTANTE PARA LO WEB 
+
+COMO DEFINIR UN BUEN NOMBRE PARA UN CLASS?
+
+*Evutar nombre demasiado generico, como tittle
+
+*Evitar nombre unido a tag, como input Text;
+
+*No dar noambre con asociacion a una propiedad CSS, como floatLeft;
+
+*No dar nombre que describa el valor de una propiedad CSS, como colorBlue;
+
+*Utilizar el guin para identificar al hijo leyendo solo el nombre de la class, como padre-hijo
+
+*Utilizar el guión bajo para agregar un modificador, cómo padre-hijo_modificador;
+
+El nombre de una class tiene que empezar con una analogía con el mundo real y la segunda parte cuando sea necesario, 
+representar el contenido del elemento, por ejemplo:cardCourse.
+
+
+COMO ORGANIZAR ARCHIVOS CSS ?
+
+Hay distintos tipos checarlos. Al parecer son estos DRY CSS , SMACSS ,BEM  ,OOCSS  ,Atomic Design
+
+
+Cómo definir un buen nombre para una class?
+
+*Durante la discusión decidimos tomar las siguientes precauciones para definir el nombre de una class:
+
+*Evitar nombre demasiado genérico, como title;
+
+*Evitar nombre unido a tag, como input Text;
+
+*No dar nombre con asociación a una propiedad CSS, como floatLeft;
+
+*No dar nombre que describa el valor de una propiedad CSS, como colorBlue;
+
+*Utilizar el guión para identificar al hijo leyendo solo el nombre de la class, cómo padre-hijo
+
+*Utilizar el guión bajo para agregar un modificador, cómo padre-hijo_modificador;
+
+*El nombre de una class tiene que empezar con una analogía con el mundo real y la segunda parte cuando sea necesario, 
+representar el contenido del elemento, por ejemplo:cardCourse.
+
+
+
+----------------------------FLEXBOX :POSICIONE ELEMENTOS EN LA PANTALLA-------------------------------------------
+
+Tema a tratar. elementos de bajo uno del otro, con la tecnica de flexbox conseguimos colocar los elementos uno del lado
+del otro 
+Se dio solucin usando flex
+/* Flexbox */
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /*Espacio entre elemento, propiedad de flex */  
+}
+.headerPrincipal-nav{
+    display: flex;  /*Con esto solucionamos que el header quedara uno a lado del otro */
+    
+}
+NOTA
+No todos los navegadores aguantan la tecnologia de flex , en la pagina can i use, nos permite colocar cualquier tipo de clase
+o herramienta que vamos a utilizar para estilizar nuestras paginas y nos indicara cual de ellas es compatible con cualquier 
+navegador. 
+
+Tenemos el siguiente código:
+
+<section class="padre">
+  <div class="hijo">Primer hijo</div>
+  <div class="hijo">Segundo hijo</div>
+</section>
+¿Cómo podemos hacer con flex para que los elementos hijos estén uno al lado del otro?
+
+Ponemos:
+
+.padre {
+  display: flex;
+}
+El valor de la propiedad display que se refiere al flexbox es flex. O sea, display:flex.
+
+Veamos el siguiente problema:
+
+<header class="encabezado">
+  <a class="logo" href="#">
+    <img src="img/logo.png">
+  </a>
+
+  <ul class="menu">
+    <li class="menu-item">Item 1 del menu</li>
+    <li class="menu-item">Item 2 del menu</li>
+    <li class="menu-item">Item 3 del menu</li>
+    <li class="menu-item">Item 4 del menu</li>
+  </ul>
+</header>
+¿Cómo podemos hacer para que el menú se ponga al lado derecho y el logo al lado izquierdo?
+
+
+Primer debemos poner display:flex en el padre, para eso hacemos:
+
+.encabezado {
+  display: flex;
+}
+Ahora automáticamente el .logo y el .menu están uno al lado del otro.
+
+De esta manera debe sobrar mucho espacio a su derecha. Para poner todo ese espacio entre ellos debemos poner la 
+propiedad justify-content: space-between en el .encabezado, o sea, en el padre.
+
+El código se quedaría así:
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+Vea el código a continuación (que es el mismo del último ejercicio):
+
+<header class="cabecalho">
+  <a class="logo" href="#">
+    <img src="img/logo.png">
+  </a>
+
+  <ul class="menu">
+    <li class="menu-item">Item 1 do menu</li>
+    <li class="menu-item">Item 2 do menu</li>
+    <li class="menu-item">Item 3 do menu</li>
+    <li class="menu-item">Item 4 do menu</li>
+  </ul>
+</header>
+
+Bueno, el css hasta ahora está así:
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+Teniendo en cuenta todo lo anterior, ¿cómo podemos alinear los elementos (.menu y .logo) verticalmente?
+
+Debemos poner align-items: center en el elemento padre, así todos los elementos se alinean verticalmente en el centro.
+
+El código sería así:
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+    align-items Debemos ponerlo en el elemento padre. De este modo, todos sus hijos se ven afectados. La propiedad 
+align-items hace que los elementos dentro del elemento padre que está con flex se alineen verticalmente, por lo tanto, para que ellos 
+se alineen en el centro podemos utilizar align-items: center, poniendo esta propiedad en el elemento padre de los elementos que queremos 
+alinear, en este caso header.
+
+
+Particularidades de flexbox
+
+Hay 2 tipos de espaciamiento diferentes. 
+El primero es espacio entre elementos space-between
+El segundo es espacio alrededor del elemento.  space-around
+
+Tenemos que estar siempre pendientes de quien es el padre de nuestros elementos para que siempre puedan funcionar. 
+
+
+
+Normalmente cuando ponemos display: flex sus hijos se quedan uno al lado del otro. Pero hay casos en los que queremos que los hijos estén uno 
+debajo del otro ¿cómo podemos hacer esto?
+
+Podemos poner flex-direction: column en el elemento padre.
+
+
+Podemos poner flex-direction: column en el elemento padre, de esa manera cambia el flujo en el que flexbox renderiza los elementos. Así 
+que se quedan uno debajo del otro.
+
+
+
+GRID PRINCIPAL Y LIMITACIONES DE FLEXBOX.
+
+
+¿Por qué a veces puede ser complicado utilizar justify-content: space-between o space-around para el grid?
+
+Es complicado usarlas porque ellas ponen comportamientos que no son buenos para grids, por ejemplo, si usamos space-around y en la última 
+fila del grid tenemos sólo dos elementos en lugar de cuatro, el espaciado entre ellos será equilibrado.
+
+
+¡Alternativa correcta! Es complicado usarlas porque ponen comportamientos que no son adecuados para grids. Tanto space-between cuanto 
+space-around harían que la última línea quedara muy fuera del patrón, en caso de que esa tuviera menos elementos que el resto de las líneas.
+
+Es complicado usarlos porque ponen comportamientos que no son adecuados para grids, por ejemplo, si usamos space-between y en la última 
+línea del grid tenemos sólo dos ítems en lugar de cuatro, el espaciado entre ellos no quedará equilibrado.
+
+
+¡Alternativa correcta! Es complicado usarlas porque ponen comportamientos que no son adecuados para grids. Tanto space-between 
+cuanto space-around harían que la última línea quedara súper rara, en caso de que esa tuviera menos elementos de que el total de 
+elementos por línea.
+
+RESPONSIVE. Movile
+Se hace el codigo para que sea responsive y luego se usa un mediaQuery de la siguiente forma
+@media (max-width: 768px) {
+  .headerPrincipal .container {
+    flex-direction: column;
+  }
+  .headerPrincipal-nav {
+    flex-direction: column;
+  }
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+  }
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+  .rodapePrincipal-patrocinadores-list {
+    align-items: initial;
+    width: 100%;
+    margin: 0%;
+  }
+}
+
+Cuando desarrollamos un sitio web tenemos que aprovechar el espacio de la pantalla, para el desktop podemos encajar elementos uno al lado 
+del otro para aprovechar este espacio extra. Cuando tenemos que adaptar nuestros sitios para móviles, ¿Cuál el flujo siguen normalmente 
+los elementos para aprovechar mejor el espacio?
+
+¿Cómo hacer que este flujo se siga utilizando el flexbox?
+
+Para aprovechar el espacio hay que poner los elementos uno debajo de otro.
+
+Para ello debemos poner flex-direction: column.
+
+
+Para móvil debemos poner un elemento debajo del otro, es la mejor manera de ocupar todo el espacio para mejorar 
+la usabilidad en móvil.
+
+Para ello podemos poner la propiedad flex-direction: column, que hace que los elementos estén uno debajo del otro. Este es el aspecto más 
+importante de la capacidad de respuesta de flexbox.
+
+
+
+Consejo: ¿Qué propiedades funcionan SOLAMENTE en los flex container y cuales son las que funcionan en los flex ítems?
+
+flex container:
+justify-content, align-items, flex-direction, flex-wrap
+flex items:
+order, flex-grow, flex-shrink
+La propiedad display: flex puede ser usada en los dos. En caso de que sea usada un flex ítem este elemento será tanto un flex ítem 
+cuanto un flex container.
+
+flex container:
+justify-content, align-items, display: flex,
+flex items:
+order, flex-grow, flex-shrink
+
+Lo mejor es tener en cuenta que lo ideal es, siempre que sea necesario, consultar la documentación a través de este sitio.
+
+Ahí podemos ver claramente qué propiedades se aplican al container y a los flex ítems, no hay que estar memorizando, esto vendrá 
+naturalmente con la práctica.
+
+Consejo: Nuestro menú en el header del sitio tiene un enlace para descargar la app Alurinha. Cuando el usuario abre nuestra web con un 
+dispositivo móvil la última opción del menú es la app. ¿Cómo podemos mejorar la experiencia del usuario en este caso?
+
+Lo mejor sería cambiar el orden del menú poniendo primero el enlace de descarga de la app.
+Podemos hacerlo con flexbox utilizando la propiedad order.
+
+Es exactamente eso, el código se vería así.
+
+.cabecalhoPrincipal-nav-link-app {
+  order: -1;
+}
+Lo mejor sería cambiar el orden del menú, poniendo el enlace de descarga la app en primer lugar, para que cuando el usuario abra nuestra 
+página encuentre el enlace y descargue nuestra app.
+
+Para ello debemos utilizar la propiedad order en nuestro flex ítem. Podemos utilizar cualquier valor menor que 0 para que nuestro flex ítem 
+sea el primero.
+
+Digamos que tenemos dos flex ítems y necesitamos que uno de esos elementos llene todo el espacio que queda del flex container1. 
+¿Cómo podemos hacerlo?
+
+Podemos utilizar la propiedad flex-grow. El código sería así:
+
+.flex-item {
+  flex-grow: 1;
+}
+
+Para decirle a un elemento / flex item que crezca y ocupe todo el espacio que queda dentro del flex container debemos utilizar la 
+propiedad flex-grow.
+
+Podemos poner el valor 1 para que este elemento ocupe todo el espacio.
+
+Definiendo la anchura de los elementos con flex:
+
+¿Para qué sirve la propiedad flex-basis?
+La propiedad flex-basis sirve para definir un ancho para el elemento en caso de que el flex container esté con flex-direction: row.
+
+flex-basis: 500px;
+
+La propiedad flex-basis sirve para definir una altura para el elemento en caso de que el flex container esté con flex-direction: column.
+
+flex-basis: 500px;
+
+La propiedad flex-basis sirve para definir una anchura o altura para el flex item. Si el flex container tiene flex-direction: column, 
+el flex-basis en el flex item servirá para definir una height. Ya el flex-direction: row funciona como un width.
+
+
+Definiendo el ancho de los elementos con flex:
+
+¿Cuál es la propiedad que utilizamos para condensar las propiedades: flex-grow, flex-shrink e flex-basis?
+
+La propiedad es la propiedad flex.
+
+ flex: 1 1 300px;
+El orden de los valores es: flex-grow, flex-shrink, flex-basis.
+
+
+Podemos usar la propiedad flex. El orden de los valores es: flex-grow, flex-shrink, flex-basis.
